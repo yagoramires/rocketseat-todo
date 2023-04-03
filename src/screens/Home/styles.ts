@@ -6,20 +6,19 @@ export const styles = StyleSheet.create({
   },
 
   header: {
-    position: 'relative',
     height: 170,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#0D0D0D',
     padding: 24,
-    paddingTop: 70,
+    paddingTop: 24,
   },
   form: {
-    position: 'absolute',
+    position: 'relative',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 4,
-    bottom: -25,
+    top: -55,
     zIndex: 999,
   },
   input: {
@@ -55,19 +54,21 @@ export const styles = StyleSheet.create({
   listContainer: {
     flex: 1,
     padding: 24,
-    paddingTop: 57,
     backgroundColor: '#1A1A1A',
   },
   listHeader: {
+    position: 'relative',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    paddingBottom: 20,
+    borderBottomColor: '',
+    borderBottomWidth: 2,
+    borderColor: '#333333',
   },
   headerTextContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    borderBottomColor: '',
   },
   headerText: {
     color: '#4EA8DE',
@@ -94,4 +95,18 @@ export const styles = StyleSheet.create({
     borderRadius: 100,
   },
   list: {},
+
+  emptyContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+    height: 200,
+  },
+  emptyMessage: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#808080',
+    marginTop: 12,
+  },
+  emptyMessage2: { fontSize: 14, color: '#808080' },
 });
