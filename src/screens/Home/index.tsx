@@ -44,7 +44,7 @@ const Home = () => {
     const index = tasks.findIndex((task) => task.id === id);
     const done = (tasks[index].done = !tasks[index].done);
 
-    const changedTasks = tasks;
+    const changedTasks = [...tasks];
     changedTasks[index] = tasks[index] = { ...tasks[index], done };
 
     return setTasks(changedTasks);
@@ -57,7 +57,6 @@ const Home = () => {
 
   useEffect(() => {
     const done = tasks.filter((task) => task.done === true);
-
     setDoneTasks(done.length);
   }, [tasks]);
 
