@@ -61,9 +61,6 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingBottom: 20,
-    borderBottomColor: '',
-    borderBottomWidth: 2,
-    borderColor: '#333333',
   },
   headerTextContainer: {
     flexDirection: 'row',
@@ -94,9 +91,12 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     borderRadius: 100,
   },
+
   list: {},
 
   emptyContainer: {
+    borderTopColor: '#333333',
+    borderTopWidth: 2,
     alignItems: 'center',
     justifyContent: 'center',
     gap: 4,
